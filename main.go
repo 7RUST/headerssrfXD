@@ -70,7 +70,6 @@ func ssrf(s, collab string) {
 	for _, i := range headers {
 		request.Header.Add(i, collab)
 	}
-	fmt.Println(request.Header)
 	httpClient.Do(request)
 }
 
